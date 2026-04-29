@@ -47,6 +47,7 @@ cd CGPA-Calculator
 
 ### Step 2: Setup Backend
 Navigate to backend folder:
+
 ```
 cd backend
 ```
@@ -156,9 +157,3 @@ This project helped in understanding:
 This project serves as a foundational full-stack application demonstrating authentication, API communication, and data processing. It can be further extended into a production-level system with database integration and improved user experience.
 ---
 
-
-* A version with SQLite
-* A more advanced README (with architecture diagram and screenshots)
-* A deployment-ready version
-
-Just tell me.
