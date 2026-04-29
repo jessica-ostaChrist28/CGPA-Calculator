@@ -42,9 +42,10 @@ CGPA-Calculator/
 ## How to Run the Project Locally
 
 ### Step 1: Clone the Repository
+```
 git clone <your-repo-link>
 cd CGPA-Calculator
-
+```
 ### Step 2: Setup Backend
 Navigate to backend folder:
 
