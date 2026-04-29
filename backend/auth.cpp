@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 // Function to take input
@@ -10,6 +11,22 @@ void getInput(string &username, string &password)
 
     cout << "Enter password: ";
     cin >> password;
+}
+
+// Function to check if user exists
+bool userExists(string username)
+{
+    ifstream file("data/users.txt");
+    string u, p;
+
+    while (file >> u >> p)
+    {
+        if (u == username)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 // Function to save user (Signup)
@@ -42,8 +59,14 @@ void signup()
     string username, password;
 
     getInput(username, password);
-    saveUser(username, password);
 
+    if (userExists(username))
+    {
+        cout << "User already exists!\n";
+        return;
+    }
+
+    saveUser(username, password);
     cout << "Signup successful!\n";
 }
 
@@ -64,7 +87,24 @@ void login()
     }
 }
 
+// Main function
 int main()
+{
+    int choice;
+
+    cout << "=== CGPA Calculator Auth ===\n";
+    cout << "1. Signup\n2. Login\nChoose: ";
+    cin >> choice;
+
+    if (choice == 1)
+        signup();
+    else if (choice == 2)
+        login();
+    else
+        cout << "Invalid choice!\n";
+
+    return 0;
+}
 {
     int choice;
 

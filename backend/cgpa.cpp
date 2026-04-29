@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Convert grade to grade point
@@ -54,15 +55,24 @@ float calculateCGPA(int n)
 // Function to display result
 void displayResult(float cgpa)
 {
-    cout << "Your CGPA is: " << cgpa << endl;
+    cout << "\n=== Your CGPA ===" << endl;
+    cout << fixed << setprecision(2) << "CGPA: " << cgpa << endl;
 }
 
+// Main function
 int main()
 {
     int n;
 
+    cout << "=== CGPA Calculator ===" << endl;
     cout << "Enter number of subjects: ";
     cin >> n;
+
+    if (n <= 0)
+    {
+        cout << "Invalid number of subjects!\n";
+        return 1;
+    }
 
     float cgpa = calculateCGPA(n);
 
