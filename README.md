@@ -54,6 +54,7 @@ cd backend
 ```
 Install dependencies:
 ```
+
 pip install flask flask-cors
 
 ```
@@ -129,7 +130,6 @@ Response:
 * CGPA is not stored per user
 * UI uses prompt-based input for subjects (not user-friendly)
 * File storage may reset when deployed on some platforms
-
 ---
 ## Future Improvements
 
@@ -140,7 +140,6 @@ Response:
 * Add input validation on backend
 * Deploy using cloud platforms (Render, Netlify)
 * Enhance security (password hashing)
-
 ---
 ## Learning Outcomes
 
@@ -151,10 +150,8 @@ This project helped in understanding:
 * REST API design using Flask
 * File handling and data parsing in Python
 * Debugging real-world issues like CORS and server errors
-
 ---
 ## Conclusion
-
 This project serves as a foundational full-stack application demonstrating authentication, API communication, and data processing. It can be further extended into a production-level system with database integration and improved user experience.
----
+
 
