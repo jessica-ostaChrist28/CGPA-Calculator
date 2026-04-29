@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CGPA Calculator</h1>
+
+<div class="container">
+
+    <!-- Toggle Buttons -->
+    <button onclick="showSignup()">Sign Up</button>
+    
+
+    <!-- SIGNUP FORM -->
+    <div id="signupForm" style="display:none;">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Create Account</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+<div id="cgpaSection" style="display:none;">
+    <h2>CGPA Calculator</h2>
+    <input type="number" id="subjects" placeholder="Number of Subjects">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
